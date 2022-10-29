@@ -1,0 +1,33 @@
+﻿@model List<Actor> 
+<div class="container1">
+    @foreach (var item in Model)
+    {
+         <div class="card1">
+            <div class="upperContainer">
+                <p class="pad">@item.StageName</p>
+            </div>
+            <div class="lowerContainer">
+                <div class="lowerLeft">
+                    <img class="actorImg" src="@item.Image" alt="">
+                </div>
+
+                <div class="lowerRight">
+                    <div>
+                        <span>@item.Description</span><br>
+
+                        <span class="dark1">FistName :</span> <br>
+                        <span>@item.FirstName</span> <br>
+                        <span class="dark1">LastName :</span> <br>
+                        <span>@item.LastName</span> <br>
+                        <span class="dark1">Age :</span> <span>@item.Age</span> <span>years</span> <br>
+                        <span class="dark1">Best Movie : </span> <br>
+                        <span>@item.BestMovie</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    }
+       
+ </div>
